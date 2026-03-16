@@ -270,3 +270,14 @@ Train models
         v
 Model comparison + interpretation
 ```
+
+## Potential Improvements for the FNN
+
+Several changes could improve feedforward neural network performance (which is quite poor for this dataset):
+
+- **Class balancing:** Use class weights, oversampling, or undersampling to reduce bias toward the most frequent editing outcome classes.
+- **Count scaling:** Test alternative input scaling strategies, such as per-gene standardization or other count normalization approaches, to improve optimization behavior.
+- **Simplified labeling strategy:** Reduce the number of target classes by merging rare or biologically similar labels, which may make the classification problem more robust.
+- **Highly variable genes only:** Restrict the input feature space to highly variable genes to reduce noise and focus the model on the most informative expression patterns.
+
+These changes can be evaluated individually or in combination to determine which preprocessing and labeling strategy gives the best predictive performance.
