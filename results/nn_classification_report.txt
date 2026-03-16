@@ -1,21 +1,10 @@
                              precision    recall  f1-score   support
 
-                    HDR_HDR     0.0000    0.0000    0.0000       105
-              HDR_Insertion     0.0000    0.0000    0.0000       145
-          HDR_NHEJ-Deletion     0.0000    0.0000    0.0000        62
-                     HDR_WT     0.0000    0.0000    0.0000        66
-        Insertion_Insertion     0.0000    0.0000    0.0000       513
-    Insertion_MMEJ-Deletion     0.0480    1.0000    0.0916       113
-    Insertion_NHEJ-Deletion     0.0000    0.0000    0.0000       396
-               Insertion_SV     0.0000    0.0000    0.0000        35
-               Insertion_WT     0.0000    0.0000    0.0000       373
-MMEJ-Deletion_MMEJ-Deletion     0.0000    0.0000    0.0000        31
-MMEJ-Deletion_NHEJ-Deletion     0.0000    0.0000    0.0000        59
-           MMEJ-Deletion_WT     0.0000    0.0000    0.0000        59
-NHEJ-Deletion_NHEJ-Deletion     0.0000    0.0000    0.0000       198
-           NHEJ-Deletion_SV     0.0000    0.0000    0.0000        28
-           NHEJ-Deletion_WT     0.0000    0.0000    0.0000       172
+                    HDR_HDR     0.6154    0.5333    0.5714        30
+        Insertion_Insertion     0.4091    0.3000    0.3462        30
+MMEJ-Deletion_MMEJ-Deletion     0.4074    0.3667    0.3860        30
+NHEJ-Deletion_NHEJ-Deletion     0.3333    0.5000    0.4000        30
 
-                   accuracy                         0.0480      2355
-                  macro avg     0.0032    0.0667    0.0061      2355
-               weighted avg     0.0023    0.0480    0.0044      2355
+                   accuracy                         0.4250       120
+                  macro avg     0.4413    0.4250    0.4259       120
+               weighted avg     0.4413    0.4250    0.4259       120

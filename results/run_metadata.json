@@ -2,9 +2,9 @@
   "input": "hHSPC_48hpn_for_ML.h5ad",
   "layer": "lognorm",
   "target_column": "Combined_RepairClass",
-  "n_cells_after_filtering": 7847,
+  "n_cells_after_filtering": 400,
   "n_features": 20421,
-  "n_classes": 15,
+  "n_classes": 4,
   "excluded_labels": [
     "WT_WT"
   ],

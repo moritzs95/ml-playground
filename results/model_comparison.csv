@@ -1,4 +1,4 @@
 model,accuracy
-XGBoost,0.24331210191082803
-Multinomial Logistic Regression,0.21231422505307856
-Neural Network,0.04798301486199576
+Neural Network,0.425
+Multinomial Logistic Regression,0.4083333333333333
+XGBoost,0.2916666666666667
