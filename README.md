@@ -57,7 +57,7 @@ pip install anndata numpy pandas scikit-learn tensorflow xgboost matplotlib scip
 
 ## Input Data
 
-The script expects an **AnnData (`.h5ad`)** file with the following:
+I added a (downsampled, cleaned) example .h5ad file. In general, the script expects an **AnnData (`.h5ad`)** file with the following:
 
 ### Expression Matrix
 
