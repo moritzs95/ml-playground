@@ -1,4 +1,4 @@
-# Gene Expression Classifier for CRISPR Editing Outcomes
+# Gene Expression Classifier for CRISPR Editing Outcomes (or other classes)
 
 This repository contains a Python pipeline for training and comparing multiple machine-learning models that predict **CRISPR editing outcome classes from single-cell gene expression profiles** stored in an **AnnData (.h5ad)** object.
 
