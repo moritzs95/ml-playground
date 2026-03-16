@@ -1,0 +1,23 @@
+{
+  "input": "hHSPC_48hpn_for_ML.h5ad",
+  "layer": "lognorm",
+  "target_column": "Combined_RepairClass",
+  "n_cells_after_filtering": 7847,
+  "n_features": 20421,
+  "n_classes": 15,
+  "excluded_labels": [
+    "WT_WT"
+  ],
+  "exclude_comma_labels": false,
+  "min_class_size": 50,
+  "test_size": 0.3,
+  "epochs": 25,
+  "batch_size": 32,
+  "seed": 42,
+  "xgb_n_estimators": 500,
+  "xgb_learning_rate": 0.03,
+  "xgb_max_depth": 4,
+  "xgb_subsample": 0.9,
+  "xgb_colsample_bytree": 0.5,
+  "xgb_early_stopping_rounds": 50
+}
