@@ -32,3 +32,25 @@ The models are trained using gene expression features directly from:
 
 ```python
 adata.layers["lognorm"]
+
+No additional scaling is applied.
+
+## Requirements
+
+Python ≥ 3.9
+
+### Core dependencies
+
+- anndata
+- numpy
+- pandas
+- scikit-learn
+- tensorflow
+- xgboost
+- matplotlib
+- scipy
+
+### Install via pip
+
+```bash
+pip install anndata numpy pandas scikit-learn tensorflow xgboost matplotlib scipy
