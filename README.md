@@ -54,3 +54,54 @@ Python ≥ 3.9
 
 ```bash
 pip install anndata numpy pandas scikit-learn tensorflow xgboost matplotlib scipy
+```
+
+# Input Data
+
+The script expects an **AnnData (.h5ad)** file with:
+
+## Expression matrix
+`adata.layers["lognorm"]`
+
+This layer should contain **normalized + log-transformed gene expression values**.
+
+## Metadata
+`adata.obs[target_column]`
+
+Default:
+
+`Combined_RepairClass`
+
+Each cell must contain a **single editing outcome class label**.
+
+Example:
+
+| cell_id | Combined_RepairClass |
+|--------|----------------------|
+| cell1  | HDR_HDR |
+| cell2  | HDR_NHEJ |
+| cell3  | NHEJ_NHEJ |
+
+---
+
+# Running the Pipeline
+
+Example command:
+
+```bash
+python train_classifiers.py \
+    --input hHSPC_48hpn_for_ML.h5ad \
+    --output-dir results \
+    --target-column Combined_RepairClass \
+    --layer lognorm \
+    --epochs 25 \
+    --batch-size 32 \
+    --xgb-n-estimators 500 \
+    --xgb-learning-rate 0.03 \
+    --xgb-max-depth 4 \
+    --xgb-subsample 0.9 \
+    --xgb-colsample-bytree 0.5 \
+    --xgb-early-stopping-rounds 50
+```
+
+
