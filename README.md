@@ -32,7 +32,7 @@ The models are trained using gene expression features directly from:
 
 ```python
 adata.layers["lognorm"]
-
+```
 No additional scaling is applied.
 
 ## Requirements
