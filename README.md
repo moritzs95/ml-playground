@@ -36,24 +36,14 @@ No additional scaling is applied.
 
 ## Requirements
 
-Python 3.9 or later.
+- Python >=3.10,<3.11
 
-### Core Dependencies
+All Python dependencies are listed in [`requirements.txt`](./requirements.txt).
 
-- `anndata`
-- `numpy`
-- `pandas`
-- `scikit-learn`
-- `tensorflow`
-- `xgboost`
-- `matplotlib`
-- `scipy`
-
-### Install via `pip`
+### Install
 
 ```bash
-pip install anndata numpy pandas scikit-learn tensorflow xgboost matplotlib scipy
-```
+pip install -r requirements.txt
 
 ## Input Data
 
